@@ -13,7 +13,7 @@ bool hasData()(File file) @system
 		fds.fd = file.fileno;
 		fds.events = POLLIN;
 		auto ret = poll(&fds, 1, 0);
-		return ret == 1;
+		return ret == 1 && !file.eof;
 	}
 	else version (Windows)
 	{
