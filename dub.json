@@ -1,0 +1,5 @@
+{
+	"name": "hasdata",
+	"description": "Cross platform check if a file or stdin has data available for read",
+	"license": "public domain"
+}
